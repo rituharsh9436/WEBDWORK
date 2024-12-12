@@ -1,0 +1,109 @@
+*{
+    font-family: 'fantasy',cursive; 
+}
+body{
+    background-image: url(29097363.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color:rgb(169,169,169,0.7);
+
+}
+.card h2{
+    margin-bottom: 20px;
+}
+.card img{
+    padding: 10px;
+    width: 55px;
+    height:55px;
+}
+
+.taskinputs{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:35px;
+
+}
+
+.taskinputs input{
+    border-radius: 55px;
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    background-color:whitesmoke;
+    font-size: 28px;
+    font-weight:bold;
+    margin-left: 10px;
+}
+
+.taskinputs button{
+
+    margin-left:10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color:whitesmoke;
+    cursor: pointer;
+
+}
+.taskinputs button img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+ul li{
+    text-align: left;
+    font-size: 28px;
+    flex-direction: column;
+    padding:  12px 8px 12 px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration:line-through;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size:38px;
+    color: #555;
+    text-align:center;
+    line-height: 40px;
+    border-radius:50%;
+}
+
+ul li span :hover{
+    background-color:#edeef0 ;
+}
